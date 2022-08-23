@@ -11,12 +11,13 @@ the scope of this project can summized simply by saying I am using the available
 
 Questions we will use as lenses to look at and evaluate client data one at a time independently for predictors of client churn:
 
+1) Does contract type have a significant relationship with customer churn?
 
-1) Is there a service associated with churn more than expected?
+2) Is there a service associated with churn more than expected?
 
-2) Do customers who churn have a higher average monthly service cost that those who do not?
+3) Do customers who churn have a higher average monthly service cost that those who do not?
 
-3) Does any method of payment have a positive relationship with customer churn?
+4) Does any method of payment have a positive relationship with customer churn?
 
 
 
