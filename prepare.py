@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 
 
 
-#the prep_telco_churn function below takes the telco_churn DataFrame and drops uneccessary columns, encodes catagorical type columns and concatenates the two. it takes this prepped DataFrame and returns it  as telco_churn
+#the prep_telco_churn function below takes the telco  DataFrame and drops uneccessary columns, encodes catagorical type columns and concatenates the two. it takes this prepped DataFrame and returns it  as telco_churn
 
 
 def prep_telco_churn(telco_churn):
@@ -38,7 +38,7 @@ def prep_telco_churn(telco_churn):
 
 
 
-#enter the name of the Dataframe and the target variable in the funcion below to split and return the data as train, validate, and test samples
+#enter the name of the Dataframe and the target variable in the funcion below to split and return the data as train, validate, and test samples. Random state is set at 123 for replication purposes
 
 def my_train_test_split(df, target):
     
@@ -49,11 +49,4 @@ def my_train_test_split(df, target):
 
 
 
-# X_train = train.drop(columns=['survived'])
-# y_train = train.survived
 
-# X_validate = validate.drop(columns=['survived'])
-# y_validate = validate.survived
-
-# X_test = test.drop(columns=['survived'])
-# y_test = test.survived

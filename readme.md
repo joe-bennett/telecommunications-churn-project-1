@@ -1,9 +1,9 @@
 
 
 
-#Descripton:
+Descripton and goals:
 
-the scope of this project can summized simply by saying we are to use the available telecommunications company client data to identify factors that have statistically significant relationship to client turnover (churn) creation, and provide recommendations to reduce customer churn occurrances (increase customer retention rate).
+the scope of this project can summized simply by saying I am using the available telecommunications company client data to identify factors that have statistically significant relationship to client turnover (churn) creation. For me as the data scientist my goal is to  create a classification model that more accurately than the baseline predicts churn. My next goal is to provide recommendations to reduce customer churn occurrances (increase customer retention rate) that are both meaningful yet doable. 
 
 
 
@@ -16,15 +16,31 @@ Questions we will use as lenses to look at and evaluate client data one at a tim
 
 2) Do customers who churn have a higher average monthly service cost that those who do not?
 
-3) What month are customers most likely to churn and does that depend on contract type?
+3) Does any method of payment have a positive relationship with customer churn?
 
-4) Does any method of payment have a positive relationship with customer churn?
+
 
 
 
 
 
 Data dictionary:
+
+Target            Datatype                Def
+
+churn             object                  yes or no if a customer canceled services
+
+
+Feature                                         Datatype                                          def
+
+payment_type_Mailed check                       uint8                                              yes/no customer pays with mailed check
+payment_type_Electronic check                   uint8                                              yes/no customer pays with e check
+payment_type_Credit card (automatic)            uint8                                              yes/no customer pays with credit card
+internet_service_type_Fiber optic               uint8                                              yes/no customer has fiber optic internet service
+internet_service_type_None                      uint8                                              yes/no customer has no internet service 
+contract_type_One year                          uint8                                              yes/no customer has a one year contract agreement
+contract_type_Two year                          uint8                                              yes/no customer has a two year contract agreemnt
+monthly_charges                                 float64                                            amount customer pays per month
 
 
 
@@ -61,8 +77,13 @@ Delivery-  the finale is the all-encompassing delivery of the live presentation.
 
 
 
+To reproduce my work:
 
-Key findings:
+You should read this README.md entirely
+Both the acquire.py and the prepare.py files need to be downloaded into your current working directory 
+download final_report.ipynb into your current working directory
+IMPORTANT you must add your own env file to your current working directory that contains host, username, and password so that you can access the codeup database
+Run the final_report.ipynb
 
 
 
